@@ -25,7 +25,7 @@ This project involves creating a REST API that tracks and returns the cumulative
 To set up the Market Indicator API on your local machine, follow these steps:
 
 ```bash
-git clone [repository-url]
+git clone https://github.com/Tacoao/FlowDesk-KafagyAli-MarketIndicatorApi.git
 cd FlowDesk-KafagyAli-MarketIndicatorApi
 npm install
 ```
@@ -48,7 +48,7 @@ Replace `{tradingPair}` with the desired trading pair symbole to fetch its cumul
 On Kucoin the trading symbole follow this format: `BTC-EUR`
 ## Features
 
-- **Real-time data processing**: The API consumes trading data in real-time and calculates the cumulative delta for specified trading pairs.
+- **100 last trade data processing**: The API consumes trading data for the 100 last trade made and calculates the cumulative delta for the specified trading pair.
 - **Extensible to multiple exchanges**: Initial support for the Kucoin exchange with the architecture designed to add more exchanges. Example: To add Binance, you should only create `endpoint->Controller->Service` in the same way as the Kucoin exchange.
 
 ## Dependencies
