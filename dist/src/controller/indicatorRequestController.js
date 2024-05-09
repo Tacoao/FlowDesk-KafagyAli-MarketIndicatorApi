@@ -66,7 +66,7 @@ class IndicatorRequestController {
     }
     verifyApiKey(apiKey) {
         try {
-            const jsonData = JSON.parse(fs.readFileSync('controller/apiKeys.json', 'utf-8'));
+            const jsonData = JSON.parse(fs.readFileSync('./src/controller/apiKeys.json', 'utf-8'));
             return jsonData.apiKeys.includes(apiKey);
         }
         catch (error) {

@@ -14,7 +14,7 @@ export class IndicatorRequestController {
    
     private verifyApiKey(apiKey: string): boolean {
         try {
-            const jsonData: ApiKeys = JSON.parse(fs.readFileSync('controller/apiKeys.json', 'utf-8'));
+            const jsonData: ApiKeys = JSON.parse(fs.readFileSync('./src/controller/apiKeys.json', 'utf-8'));
             return jsonData.apiKeys.includes(apiKey);
         } catch (error) {
             console.error('Erreur lors de la lecture du fichier JSON :', error);

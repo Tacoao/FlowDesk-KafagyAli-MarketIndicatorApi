@@ -1,4 +1,4 @@
-import { IndicatorRequestService } from '../service/indicatorRequestService';
+import { IndicatorRequestService } from '../src/service/indicatorRequestService';
 import axios from 'axios';
 
 jest.mock('axios');
