@@ -25,7 +25,7 @@ This project involves creating a REST API that tracks and returns the cumulative
 To set up the Market Indicator API on your local machine, follow these steps:
 
 ```bash
-git clone [repository-url]
+git clone https://github.com/Tacoao/FlowDesk-KafagyAli-MarketIndicatorApi.git
 cd FlowDesk-KafagyAli-MarketIndicatorApi
 npm install
 ```
